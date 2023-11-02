@@ -42,6 +42,8 @@ a {
 
 .header__wrapper {
     background-color: #222;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .header {
@@ -58,8 +60,15 @@ a {
     align-items: center;
 }
 
+.menu__icon {
+    padding-right: 31px;
+}
+
 .first__sec__wrapper {
     background-color: #F1E4E6;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
 }
 
 .intro {
@@ -224,4 +233,66 @@ a {
     padding: 15px 39px;
     border: #F16D7F solid 1px;
     background-color: inherit;
+}
+
+@media screen and (max-width: 1439px) {
+    .container {
+        max-width: 100%;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .logo {
+        padding-left: 16px;
+    }
+
+    .menu__icon {
+        padding-right: 25px;
+    }
+
+    .second__menu {
+        padding-right: 41px;
+    }
+
+    .first__sec__wrapper {
+        max-width: 1439px;
+    }
+
+    .intro {
+        gap: 39px;
+    }
+
+    .intro__title {
+        font-size: 44px;
+    }
+    .intro__subtitle {
+        font-size: 24px;
+    }
+    .intro__pink {
+        font-size: 24px;
+    }
+
+    .offer {
+        gap: 20px;
+    }
+    .goods {
+        margin-top: 110px;
+    }
+
+    .goods__cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 16px;
+        margin-top: 73px;
+    }
+
+    .goods__info {
+        padding: 24px 29px 20px 16px;
+    }
+
+    .good__info__btn {
+        margin-top: 32px;
+        margin-bottom: 71px;
+    }
 }
