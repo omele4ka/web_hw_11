@@ -141,6 +141,7 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    white-space: nowrap;
 }
 
 .offer__black__txt {
@@ -260,6 +261,7 @@ a {
 
     .intro {
         gap: 39px;
+        margin: 0 auto;
     }
 
     .intro__title {
@@ -275,6 +277,7 @@ a {
     .offer {
         gap: 20px;
     }
+
     .goods {
         margin-top: 110px;
     }
@@ -287,6 +290,14 @@ a {
         margin-top: 73px;
     }
 
+    .goods__item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .goods__img {
+        max-width: 100%;
+    }
     .goods__info {
         padding: 24px 29px 20px 16px;
     }
