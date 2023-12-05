@@ -1,4 +1,4 @@
-@font-face {
+font-face {
     font-family: 'Lato-Light', sans-serif;
     src: url(../fonts/Lato-Light.ttf);
     font-weight: 300;
@@ -109,9 +109,10 @@ a {
     padding-top: 32px;
     padding-bottom: 32px;
     background-color: #fff;
-    position: absolute;
+    position: fixed;
     right: 0;
-    top: 0;
+    top: 75px;
+    z-index: 10;
     display: none;
 }
 
@@ -149,8 +150,10 @@ a {
     font-weight: 400;
     line-height: normal;
 }
-
-.main-menu-item:hover .dropdown-menu {
+.menu {
+    display: flex;
+}
+.main-menu-item:hover + .dropdown-menu {
     display: block;
     z-index: 999;
 }
@@ -482,13 +485,28 @@ a {
     gap: 7px;
 }
 
-.footer__icon-item:hover #background {
-    fill: #F16D7F;
+.social-net__item {
+    width: 32px;
+    height: 32px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .social-logo {
+        fill: black;
+    }
+
+    &:hover {
+        background-color: #F16D7F;
+
+        .social-logo {
+            fill: #FFFFFF;
+        }
+    }
+
 }
 
-.footer__icon-item:hover #icon {
-    fill: #FFF;
-}
 
 @media screen and (max-width: 1439px) {
     .container {
