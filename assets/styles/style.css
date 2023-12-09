@@ -567,7 +567,7 @@ a {
     }
 
     .goods__img {
-        max-width: 100%;
+        width: 100%;
     }
 
     .goods__info {
@@ -690,5 +690,11 @@ a {
         padding-top: 43px;
         padding-bottom: 9px;
         gap: 40px;
+    }
+    .user-registration__input {
+        width: 225px;
+    }
+    .subscribe__promotion__btn {
+        width: 95px;
     }
 }
